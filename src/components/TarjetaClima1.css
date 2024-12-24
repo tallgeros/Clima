@@ -1,0 +1,238 @@
+
+.tarjeta {
+  max-width: 380px;
+  height: 850px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  user-select: none;
+  border-radius: 15px;
+  background: "#292f56";
+  border: 2px 2px 2px 2px solid #ffffff;
+}
+.tarjeta {
+  overflow: auto;
+  scrollbar-width: none;
+}
+.imagen-predeterminada {
+
+
+  object-position: 100%;
+
+
+}
+
+.tarjetaFrontal {
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+.informacion-dia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 8px;
+  color: #000;
+}
+.ubicacion {
+  font-weight: 800;
+  font-style: italic;
+
+}
+
+.principal.amarillo {
+  background-color: #dac864; /* Amarillo soleado */
+}
+
+.principal.gris {
+  background-color: #dbd7d2;
+  opacity: 0.5; /* Gris nublado */
+}
+
+.principal.celeste-oscuro {
+  background-color: #4682b4; /* Azul oscuro para lluvia */
+}
+
+.principal.blanco-apagado {
+  background-color: #f5f5f5; /* Blanco apagado para nieve */
+}
+
+.principal.default {
+  background-color: #d3d3d3; /* Por defecto */
+}
+.icono-datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.icono-grande {
+  margin-left: 10;
+}
+.icono-datos {
+  display: flex;
+}
+.icono {
+  justify-content: left;
+  margin: 0px 10px 0px 10px;
+}
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.condiciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-bottom: -5px;
+}
+.datos-condiciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: -3px;
+}
+.condicion-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.1px solid rgb(248, 245, 245);
+  height: 100%;
+  padding: 5px;
+  font-style: italic;
+  font-size: 0.9em;
+  width: 100px;
+  height: 60px;
+margin-bottom: 10px;
+}
+.condicion-item p {
+  text-align: center;
+}
+.aviso {
+  width: 100%;
+
+  color: rgba(255, 0, 0, 0.8);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff4500, 0 0 30px #ff6347;
+  overflow: hidden;
+  position: relative;
+}
+
+.aviso p {
+  animation: aviso-scroll 10s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@keyframes aviso-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.titulillo {
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+}
+.pronostico-horas {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  overflow-x: auto;
+  gap: 10px;
+  scrollbar-width: none;
+  margin-left: 10px;
+}
+
+.hora-pronostico {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 50px;
+  max-height: 150px;
+  text-align: center;
+}
+
+.hora-pronostico p {
+ margin: 0;
+padding: 5px;
+}
+.lista-dias {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scrollbar-width: none;
+  margin-left: 10px;
+}
+.dia {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 70px;
+  text-align: center;
+}
+.datos-noche {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.noche-item {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.noche-item p {
+  width: 150px;
+  font-style: italic;
+  font-weight: bold;
+}
+.luneta {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: -3px;
+}
+.solete {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: -3px;
+}
+.salida-puesta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.1px solid rgb(248, 245, 245);
+  height: 100%;
+  padding: 8px;
+  font-style: italic;
+  font-size: 0.9em;
+}
